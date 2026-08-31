@@ -1,20 +1,20 @@
 const STORAGE_KEY = 'financeiro_app_v2';
 
 let state = loadState() || {
-  salarios: [{nome:'Salário', valor:5000, dia:5}],
+  salarios: [{nome:'Salário', valor:0, dia:5}],
   entradas: [],
   fixas: [
-    {nome:'Aluguel', valor:1200, dia:10},
-    {nome:'Internet', valor:120, dia:15},
-    {nome:'Celular', valor:80, dia:20},
-    {nome:'Streaming', valor:50, dia:25}
+    {nome:'Aluguel', valor:0, dia:10},
+    {nome:'Internet', valor:0, dia:15},
+    {nome:'Celular', valor:0, dia:20},
+    {nome:'Streaming', valor:0, dia:25}
   ],
   parcelas: [
-    {nome:'TV 55" 12x', valor:350, total:12, atual:3, dia:10},
-    {nome:'Notebook 10x', valor:450, total:10, atual:5, dia:15}
+    {nome:'TV 55" 12x', valor:0, total:12, atual:3, dia:10},
+    {nome:'Notebook 10x', valor:0, total:10, atual:5, dia:15}
   ],
   saidas: [],
-  saldoInicial: 1500,
+  saldoInicial: 0,
   mesAtual: { ano: 2026, mes: 7 },
   ajustesDia: {}  // { "2026-08-15": [{nome, valor, tipo}] }
 };
